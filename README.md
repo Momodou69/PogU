@@ -41,8 +41,7 @@ $ npm install discord.js
 $ npm install ms
 $ node . 
 ```
-
-### You might need to change some settings as the role IDs as they are specific to each server.
+You might need to change some settings as the role IDs as they are specific to each server.
 
 To invite your bot to your server, go to **[Discord Bot Calculator](https://discordapi.com/permissions.html)**. Copy your **client ID** from your application tab in the **Dev Portal** and paste it in the field. Give it all the **permissions**** and press the link and the bot will be invited to your server. 
 

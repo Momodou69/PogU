@@ -2,13 +2,17 @@
 ## Table of contents
 * ### [Info](#info)
 * ### [Requirements](#requirements)
+* ### [How it was built](#built-with)
 * ### [Setup](#setup)
+* ### [To Do](#to-do)
 
 ## Info
 * #### **PogU** is a Discord bot written in **JS** and using **Node.js** to use it on your ***VPS/Hosting Service***
 
 ## Requirements
 * #### **Node.js** version 12 or newer
+## Built with
+* #### This project was built using JavaScript with Node.js to use it server-end and with the npm libraries: `discord.js and ms.js`
 ## Setup
 ``` Shell
 $ npm init
@@ -46,5 +50,10 @@ $ node .
 * #### To invite your bot to your server, go to **[Discord Bot Calculator](https://discordapi.com/permissions.html)**. Copy your **client ID** from your application tab in the **Dev Portal** and paste it in the field. Give it all the **permissions** and press the link and the bot will be invited to your server. 
 
 
+## To Do
 
-
+| To Do| Done | 
+|-----------|:-----------:|
+| Add MongoDB for points system | ms.js integration | 
+| Add Ticket system | Moderation capabilities |
+| 

@@ -5,17 +5,17 @@
 * [Setup](#setup)
 
 ## Info
-**PogU** is a Discord bot written in **JS** and using **Node.js** to use it on your ***VPS/Hosting Service***
+* **PogU** is a Discord bot written in **JS** and using **Node.js** to use it on your ***VPS/Hosting Service***
 
 ## Requirements
-**Node.js** version 12 or newer
+* **Node.js** version 12 or newer
 ## Setup
 ``` Shell
 $ npm init
 ```
-modify the main file to be **main.js** instead of **index.js**.
+* Modify the main file to be **main.js** instead of **index.js**.
 
-Use the **[Discord Dev Portal](https://discord.com/developers)** to create an application and a bot like so:
+* Use the **[Discord Dev Portal](https://discord.com/developers)** to create an application and a bot like so:
 
 
 
@@ -31,7 +31,7 @@ Use the **[Discord Dev Portal](https://discord.com/developers)** to create an ap
 
 
 
-Copy your **token** and put it in the main.js file at the end as so:
+* Copy your **token** and put it in the main.js file at the end as so:
 ``` js
 client.login('YOUR_TOKEN'); 
 ```
@@ -41,9 +41,9 @@ $ npm install discord.js
 $ npm install ms
 $ node . 
 ```
-You might need to change some settings as the role IDs as they are specific to each server.
+* You might need to change some settings as the role IDs as they are specific to each server.
 
-To invite your bot to your server, go to **[Discord Bot Calculator](https://discordapi.com/permissions.html)**. Copy your **client ID** from your application tab in the **Dev Portal** and paste it in the field. Give it all the **permissions** and press the link and the bot will be invited to your server. 
+* To invite your bot to your server, go to **[Discord Bot Calculator](https://discordapi.com/permissions.html)**. Copy your **client ID** from your application tab in the **Dev Portal** and paste it in the field. Give it all the **permissions** and press the link and the bot will be invited to your server. 
 
 
 

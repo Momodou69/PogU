@@ -1,4 +1,5 @@
-# PogU Project <img src="https://cdn.betterttv.net/emote/5e4e7a1f08b4447d56a92967/2x" alt="Bot creation" width="30"/>
+# PogU Project
+ <img src="https://cdn.betterttv.net/emote/5e4e7a1f08b4447d56a92967/2x" alt="Bot creation" width="100"/>
 
 
 

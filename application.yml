@@ -1,9 +1,9 @@
 server: # REST and WS server
-  port: 20000
-  address: pn1.wolfhosts.com
+  port: 6666
+  address: 0.0.0.0
 lavalink:
   server:
-    password: "WolfHost"
+    password: "LavaLinkserverPassWord"
     sources:
       youtube: true
       bandcamp: true

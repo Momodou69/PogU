@@ -88,6 +88,4 @@ client.on('message', message =>{
     }
 });
 
-client.login('ODE5NTY3MDg5NTcyMTE4NTQ4.YEofVA.bRRnhkutbKjMa9oVZjw5bQ2o-7k'); 
-
-//Invite full perms 'https://discord.com/oauth2/authorize?client_id=819567089572118548&scope=bot&permissions=2147483647'
+client.login(''); 

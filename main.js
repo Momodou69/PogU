@@ -10,7 +10,9 @@ const memberCounter = require('./counters/member-counter')
 
 client.commands = new Discord.Collection();
 
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+const user = client.users.cache.get("849728581218205727");
+
+const commandFiles = fs.readdirSync('commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
 
@@ -18,8 +20,9 @@ for(const file of commandFiles){
 }
 
 client.once('ready', () => {
-     console.log('PogU bot is online');
+     console.log(`${client.tag} with the ID ${client.user} is online`);
      memberCounter(client);
+     
 });
 client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Server Members')
@@ -37,25 +40,25 @@ client.on('message', message =>{
         client.commands.get('ping').execute(message, args);
     }
     
-    if(command === 'hello'){
-        client.commands.get('hello').execute(message, args);
-    }
+    // if(command === 'hello'){
+    //     client.commands.get('hello').execute(message, args);
+    // }
     
-    if(command === 'smoke'){
-        client.commands.get('smoke').execute(message, args);
-    }
+    // if(command === 'smoke'){
+    //     client.commands.get('smoke').execute(message, args);
+    // }
     
-    if(command === 'modapplication'){
-        client.commands.get('modapplication').execute(message, args);
-    }
+    // if(command === 'modapplication'){
+    //     client.commands.get('modapplication').execute(message, args);
+    // }
     
     if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
 
-    if(command === 'rules'){
-        client.commands.get('rules').execute(message, args, Discord);
-    }
+    // if(command === 'rules'){
+    //     client.commands.get('rules').execute(message, args, Discord);
+    // }
 
     if(command === 'clear'){
         client.commands.get('clear').execute(message, args);
@@ -80,12 +83,12 @@ client.on('message', message =>{
     if(command === 'member'){
         client.commands.get('member').execute(message, args);
     }
-    if(command === 'uselessembed'){
-        client.commands.get('uselessembed').execute(message, args);
-    }
-    if(command === 'reactionrole'){
-        client.commands.get('reactionrole').execute(message, args, Discord, client);
-    }
+    // if(command === 'uselessembed'){
+    //     client.commands.get('uselessembed').execute(message, args);
+    // }
+    // if(command === 'reactionrole'){
+    //     client.commands.get('reactionrole').execute(message, args, Discord, client);
+    // }
 });
 
-client.login(''); 
+client.login('ODQ5NzI4NTgxMjE4MjA1NzI3.YLfZaA.bCe5II3fwqJUyfdVXL2Z3VeZoeM'); 

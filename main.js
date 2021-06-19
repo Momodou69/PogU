@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 
+require('dotenv').config();
+
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 const prefix = 'Pog ';
@@ -60,6 +62,14 @@ client.on('message', message =>{
     //     client.commands.get('rules').execute(message, args, Discord);
     // }
 
+    if(command === 'play'){
+        client.commands.get('play').execute(message, args, Discord);
+    }
+
+    if(command === 'leave'){
+         client.commands.get('leave').execute(message, args, Discord);
+    }
+
     if(command === 'clear'){
         client.commands.get('clear').execute(message, args);
     }
@@ -91,4 +101,4 @@ client.on('message', message =>{
     // }
 });
 
-client.login('ODQ5NzI4NTgxMjE4MjA1NzI3.YLfZaA.bCe5II3fwqJUyfdVXL2Z3VeZoeM'); 
+client.login("ODQ5NzI4NTgxMjE4MjA1NzI3.YLfZaA.bCe5II3fwqJUyfdVXL2Z3VeZoeM"); 

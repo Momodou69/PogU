@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon main.js",
-    "lavalink": "java -jar lavalink.jar"
+    "lavalink": "java -jar lavalink.jar",
+    "start": "node ."
   },
   "author": "Spoozy",
   "license": "ISC",

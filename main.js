@@ -16,6 +16,7 @@ const user = client.users.cache.get("849728581218205727");
 
 const commandFiles = fs.readdirSync('commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
+
     const command = require(`./commands/${file}`);
 
     client.commands.set(command.name, command);
@@ -42,25 +43,9 @@ client.on('message', message =>{
         client.commands.get('ping').execute(message, args);
     }
     
-    // if(command === 'hello'){
-    //     client.commands.get('hello').execute(message, args);
-    // }
-    
-    // if(command === 'smoke'){
-    //     client.commands.get('smoke').execute(message, args);
-    // }
-    
-    // if(command === 'modapplication'){
-    //     client.commands.get('modapplication').execute(message, args);
-    // }
-    
     if(command === 'help'){
         client.commands.get('help').execute(message, args);
     }
-
-    // if(command === 'rules'){
-    //     client.commands.get('rules').execute(message, args, Discord);
-    // }
 
     if(command === 'play'){
         client.commands.get('play').execute(message, args, Discord);
@@ -93,12 +78,6 @@ client.on('message', message =>{
     if(command === 'member'){
         client.commands.get('member').execute(message, args);
     }
-    // if(command === 'uselessembed'){
-    //     client.commands.get('uselessembed').execute(message, args);
-    // }
-    // if(command === 'reactionrole'){
-    //     client.commands.get('reactionrole').execute(message, args, Discord, client);
-    // }
-});
+   });
 
 client.login("ODQ5NzI4NTgxMjE4MjA1NzI3.YLfZaA.bCe5II3fwqJUyfdVXL2Z3VeZoeM"); 
